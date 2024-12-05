@@ -1,3 +1,10 @@
+/*
+Personal Website
+Quinnton Parchman
+12/5/2024
+*/
+
+
 const stateAbbreviations = ["AL", "AK", "AZ", "AR", /* other states */];
 
 function checkRequired(fieldId, errorMessage) {
