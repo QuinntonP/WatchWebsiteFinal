@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Collection</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('watches')">Watches</a></li>
+                <li><a href="#" onclick="showSection('brands')">Brands</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <img src="img/Hamilton.jpg" alt="Hero Watch Image">
+        <h1>Your Time, Your Style</h1>
+    </section>
+
+    <!-- Watches Section -->
+    <section id="watches" class="featured-watches">
+        <h2>Featured Watches</h2>
+        <div class="watch-grid">
+            <div class="watch-item">
+                <img src="img/watch1.jpg" alt="Watch 1">
+                <p>Watch Name 1</p>
+                <p>$299</p>
+            </div>
+            <div class="watch-item">
+                <img src="img/watch2.jpg" alt="Watch 2">
+                <p>Watch Name 2</p>
+                <p>$499</p>
+            </div>
+            <div class="watch-item">
+                <img src="img/watch3.jpg" alt="Watch 3">
+                <p>Watch Name 3</p>
+                <p>$799</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section id="brands">
+        <h2>Popular Watch Brands</h2>
+        <p>Explore the top brands like Rolex, Omega, and more!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@watchcollection.com</p>
+    </section>
+
+    <footer>
+        <p>Follow Us:</p>
+        <div class="social-media">
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a>
+        </div>
+        <form class="newsletter">
+            <label for="email">Subscribe to our Newsletter</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
+
+<!-- Visitor Registration Form Section -->
+<section id="visitor-form" style="display: none;">
+    <h2>Visitor Registration</h2>
+    <form id="myform" novalidate>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <div class="errorMsg"></div>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <div class="errorMsg"></div>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <div class="errorMsg"></div>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            <div class="errorMsg"></div>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+            <div class="errorMsg"></div>
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" required>
+            <div class="errorMsg"></div>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <div class="errorMsg"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="errorMsg"></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>How did you find us?</legend>
+            <label><input type="checkbox" name="find-us" value="internet"> Internet</label>
+            <label><input type="checkbox" name="find-us" value="friend"> Friend</label>
+            <label><input type="checkbox" name="find-us" value="google"> Google</label>
+            <div class="errorMsg"></div>
+        </fieldset>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <button type="submit" id="submitBtn">Submit</button>
+    </form>
+</section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* 
+theme.css
+Changes:
+- Dark theme colors applied
+- Moved navigation to a vertical sidebar
+- Updated button and link hover effects
+*/
+
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #333;
+    border-bottom: none;
+}
+
+nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    background-color: #444;
+}
+
+.hero h1 {
+    color: #ffcc00;
+}
+
+.featured-watches {
+    background-color: #333;
+}
+
+.featured-watches h2 {
+    color: #ffcc00;
+}
+
+.watch-item {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+footer {
+    background-color: #222;
+}
+
+.social-media a {
+    color: #ffcc00;
+}
+
+.social-media a:hover {
+    color: #e0e0e0;
+}
+
+.newsletter button {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.newsletter button:hover {
+    background-color: #e0e0e0;
+    color: #333;
+}
